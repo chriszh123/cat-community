@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<scroll-view scroll-y class="container">
+  <!--社区简介-->
+  <view class="intro">
+    <view>
+      <image class="logo" src="/images/cat.jpg" background-size="cover"></image>
+    </view>
+    <view>
+      <text class="desc">辅导猫，您身边的贴心小助手。</text>
+    </view>
+  </view>
+  <!-- 登录按钮 -->
+  <button class="btn" open-type="getUserInfo"  bindgetuserinfo="bindgetuserinfo" wx:if="{{!ishaveUserinfo}}" hover-class="btn-click">
+    登录
+  </button>
+
+  <!--社区规则-->
+  <view class="content">
+    <view class="content-title">
+    社区规则
+      <view class="title-icon"/>
+    </view>
+    <view class="content-text">
+      <view>1. 同类问题无需重复回答。</view>
+      <view>2. 图片、文件在线群发，查收情况一目了然。</view>
+      <view>3. 在线采集信息，从此告别“表哥表姐”。</view>
+      <view>4. 问题数据一键打回。</view>
+      <view>5. 信息留存.随时可查。</view>
+      <view>6. 让纸质假单退出历史舞台。</view>
+    </view>
+  </view>
+</scroll-view>
