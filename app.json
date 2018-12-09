@@ -35,9 +35,9 @@
             "iconPath": "images/gift-default.png",
             "selectedIconPath": "images/gift-selected.png"
         }, {
-            "navigationBarTitleText": "我",
+            "navigationBarTitleText": "我的",
             "pagePath": "pages/profile/index",
-            "text": "我",
+            "text": "我的",
             "iconPath": "images/me-default.png",
             "selectedIconPath": "images/me-selected.png"
         }]

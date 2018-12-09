@@ -52,7 +52,7 @@ Page({
                 wx.showToast({
                     title: '发布成功', //提示的内容,
                     icon: 'success', //图标,
-                    duration: 2000, //延迟时间,
+                    duration: 5000, //延迟时间,
                     mask: true, //显示透明蒙层，防止触摸穿透,
                     success: res => {
                         wx.switchTab({
