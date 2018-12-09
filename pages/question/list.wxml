@@ -1,0 +1,2 @@
+<view>问题列表</view>
+<image src='/images/post-selected.png' class='post' bindtap='post'></image>

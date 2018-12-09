@@ -1,0 +1,24 @@
+<view>
+    <form bind:submit="post">
+        <!-- 标题 -->
+        <view class="page-section">
+            <view class="weui-cells__title">输入标题</view>
+            <view class="weui-cells weui-cells_after-title">
+                <view class="weui-cell weui-cell_input">
+                    <input class="weui-input" name="title" auto-focus placeholder="请输入提问标题" />
+                </view>
+            </view>
+        </view>
+        <!-- 内容 -->
+        <view class="page-section">
+            <view class="weui-cells__title">输入提问内容</view>
+            <view class="textarea-wrp">
+                <textarea auto-height name="content" />
+            </view>
+        </view>
+        <!-- 按钮 -->
+        <view class='page-section'>
+            <button form-type='submit' bindtap="primary" class='weui-btn'>提问</button>
+        </view>
+    </form>
+</view>
