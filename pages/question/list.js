@@ -33,7 +33,7 @@ Page({
     onPullDownRefresh: function () {
         // 下拉刷新动作
         console.log("下拉刷新动作");
-        clearList();
+        this.clearList();
         this.list();
         wx.stopPullDownRefresh();
     },
