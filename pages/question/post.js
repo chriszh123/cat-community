@@ -57,17 +57,7 @@ Page({
                     success: res => {
                         // 跳转到列表页
                         wx.switchTab({
-                            url: 'list',
-                            success: function (e) {
-                                var listPage = getCurrentPages().pop();
-                                if (listPage == undefined || listPage == null) {
-                                    console.log("提交问题后跳转至列表页时没有获取到列表页page对象");
-                                    return;
-                                }
-                                console.log("提交问题后跳转至列表页时需要刷新主页面");
-                                // 有的手机机型不支持回调onload时间，这时候需要在对方重写onShow();
-                                listPage.onLoad();
-                            }
+                            url: 'list'
                         });
                     }
                 });
