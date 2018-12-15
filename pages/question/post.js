@@ -65,7 +65,7 @@ Page({
                                     return;
                                 }
                                 console.log("提交问题后跳转至列表页时需要刷新主页面");
-                                listPage.clearList();
+                                // 有的手机机型不支持回调onload时间，这时候需要在对方重写onShow();
                                 listPage.onLoad();
                             }
                         });

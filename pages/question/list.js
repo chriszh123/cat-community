@@ -14,6 +14,11 @@ Page({
     onLoad: function () {
         this.list();
     },
+    onShow: function (e) {
+        console.log("dddddddddddd");
+        this.clearList();
+        this.onLoad();
+    },
     post: function () {
         // 跳转至提问页面
         wx.navigateTo({
@@ -33,7 +38,7 @@ Page({
     onPullDownRefresh: function () {
         // 下拉刷新动作
         console.log("下拉刷新动作");
-        clearList();
+        this.clearList();
         this.list();
         wx.stopPullDownRefresh();
     },
