@@ -20,6 +20,12 @@ Page({
             url: 'post'
         });
     },
+    clearList: function () {
+        this.setData({
+            page: 0,
+            list: []
+        });
+    },
     onReachBottom: function () {
         //当页面滑动到底部，加载下一页
         this.list();
@@ -27,10 +33,7 @@ Page({
     onPullDownRefresh: function () {
         // 下拉刷新动作
         console.log("下拉刷新动作");
-        this.setData({
-            page: 0,
-            list: []
-        });
+        clearList();
         this.list();
         wx.stopPullDownRefresh();
     },
