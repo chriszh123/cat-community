@@ -47,8 +47,8 @@ const service = options => {
         };
 
         let token = wx.getStorageSync('token') || "";
-        console.log("token:" + token);
-        console.log("optionsData:" + JSON.stringify(optionsData));
+        console.log("service token:" + token);
+        console.log("service optionsData:" + JSON.stringify(optionsData));
         if (!token) {
             if (optionsData.url.indexOf('api/login') == -1) {
                 wx.showModal({
@@ -70,6 +70,7 @@ const service = options => {
                 return;
             }
         }
+        // 向后端发送请求
         wx.request(optionsData);
     });
 

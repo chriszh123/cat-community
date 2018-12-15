@@ -22,7 +22,7 @@ Page({
                 mask: true, //显示透明蒙层，防止触摸穿透,
                 success: res => {}
             });
-            // 跳转至提问页面
+            // 切换至提问页面
             wx.switchTab({
                 url: 'question/list'
             });
@@ -65,6 +65,7 @@ Page({
                             app.globalData.token = response.data.token;
                         }
                     });
+                    // 切换至问题列表页
                     wx.switchTab({
                         url: 'question/list'
                     });

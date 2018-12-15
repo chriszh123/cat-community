@@ -46,7 +46,7 @@ Page({
             }
         }).then(response => {
             wx.hideLoading();
-            console.log(response);
+            console.log("Question:" + JSON.stringify(response));
             if (response.status == 200) {
                 // 展示 登录成功 提示框
                 wx.showToast({
@@ -55,6 +55,7 @@ Page({
                     duration: 5000, //延迟时间,
                     mask: true, //显示透明蒙层，防止触摸穿透,
                     success: res => {
+                        // 跳转到列表页
                         wx.switchTab({
                             url: 'list'
                         });

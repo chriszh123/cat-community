@@ -1,4 +1,5 @@
 {
     "disableScroll": true,
-    "navigationBarTitleText": "有问题"
+    "navigationBarTitleText": "有问题",
+    "enablePullDownRefresh":true
 }
