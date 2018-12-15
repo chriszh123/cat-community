@@ -14,6 +14,11 @@ Page({
     onLoad: function () {
         this.list();
     },
+    onShow: function (e) {
+        console.log("dddddddddddd");
+        this.clearList();
+        this.onLoad();
+    },
     post: function () {
         // 跳转至提问页面
         wx.navigateTo({
