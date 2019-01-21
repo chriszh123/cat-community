@@ -48,7 +48,7 @@ Page({
             wx.hideLoading();
             console.log("Question:" + JSON.stringify(response));
             if (response.status == 200) {
-                // 展示 登录成功 提示框
+                // 展示 发布成功 提示框
                 wx.showToast({
                     title: '发布成功', //提示的内容,
                     icon: 'success', //图标,
